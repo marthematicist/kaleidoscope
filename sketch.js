@@ -1,7 +1,7 @@
 // xRes and yRes control how many pixels wide and tall
 // the screen is, respectively
-var xRes = 1200;
-var yRes = 600;
+var xRes = windowWidth;
+var yRes = windowHeight;
 
 // bgColor and drawColor will control the background and
 // draw colors, respectively. They will be set in setup()
