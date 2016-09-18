@@ -61,7 +61,8 @@ function setup() {
   var startTime = millis();
   while( millis() - startTime < 3000 ) {
     // do nothing
-    console.log( "waiting" );
+    text("KALEIDOSCOPE" , 0.5*xRes , 0.5*yRes );
+    console.log( "waiting2" );
   }
   
   // draw the background to clear the title screen
