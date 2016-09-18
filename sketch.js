@@ -62,7 +62,7 @@ function setup() {
   var startTime = millis();
   while( millis() - startTime < 3000 ) {
     // do nothing
-    console.log( "waiting2" );
+    console.log( "waiting" );
   }
   
   // sets the mode for angle-based functions to degrees
@@ -75,7 +75,7 @@ function setup() {
 function draw() {
   
   // clear the title screen on the first frame
-  if( frameCount = 0 ){ 
+  if( frameCount == 0 ){ 
     background( bgColor );
   }
   
