@@ -28,8 +28,8 @@ var dt = 1;
 
 // minMarker and maxMarker control the smallest and largest
 // size of the dots drawn
-var minMarker = 5;
-var maxMarker = 50;
+var minMarker = 2;
+var maxMarker = 40;
 
 // setup runs once when the script starts
 function setup() {
