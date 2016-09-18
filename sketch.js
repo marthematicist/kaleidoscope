@@ -31,6 +31,9 @@ var dt = 1;
 var minMarker = 2;
 var maxMarker = 40;
 
+// flag for whether it is the first frame or not
+firstFrame = true;
+
 // setup runs once when the script starts
 function setup() {
   // get browser's window dimensions
@@ -52,7 +55,10 @@ function setup() {
   // draw the background (this only happens once)
   background( bgColor );
   
-  // draw the title screen and wait 3 seconds
+  // sets the mode for angle-based functions to degrees
+  angleMode( DEGREES );
+  
+  // draw the title screen and set the start time
   fill( 0 , 0 , 0 , 1 );
   textAlign( CENTER );
   textSize( 60 );
@@ -60,13 +66,6 @@ function setup() {
   textSize( 30 );
   text( "Click or touch to draw. \n -marthematicist-" , 0.5*xRes , 0.5*yRes + 35 );
   var startTime = millis();
-  while( millis() - startTime < 3000 ) {
-    // do nothing
-    console.log( "waiting2" );
-  }
-  
-  // sets the mode for angle-based functions to degrees
-  angleMode( DEGREES );
 }
 // ... and that's the end of setup()
 
@@ -74,9 +73,14 @@ function setup() {
 // draw runs each time a new frame is drawn
 function draw() {
   
+  // if 3 seconds have not elapsed since the start time, do nothing
+  if( millis() - startTime < 3000 ){
+    return;
+  }
   // clear the title screen on the first frame
-  if( frameCount == 1 ){ 
+  if( firstFrame ){ 
     background( bgColor );
+    firstFrame = false;
   }
   
   // Increase t by dt. A new frame is being frawn, so t
