@@ -62,11 +62,11 @@ function setup() {
   while( millis() - startTime < 3000 ) {
     // do nothing
     text("KALEIDOSCOPE" , 0.5*xRes , 0.5*yRes );
-    console.log( "waiting2" );
+    console.log( "waiting" );
   }
   
   // draw the background to clear the title screen
-  background( bgColor );
+  //background( bgColor );
   
   // dots do not have a stroke (outline) drawn around them
   noStroke();
