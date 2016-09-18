@@ -52,6 +52,7 @@ function setup() {
   background( bgColor );
   
   // draw the title screen and wait 3 seconds
+  fill( 0 , 0 , 0 , 1 );
   textAlign( CENTER );
   textSize( 60 );
   text("KALEIDOSCOPE" , 0.5*xRes , 0.5*yRes );
