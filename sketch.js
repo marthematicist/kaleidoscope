@@ -65,7 +65,7 @@ function setup() {
   text("KALEIDOSCOPE" , 0.5*xRes , 0.5*yRes );
   textSize( 30 );
   text( "Click or touch to draw. \n -marthematicist-" , 0.5*xRes , 0.5*yRes + 35 );
-  var startTime = millis();
+  startTime = millis();
 }
 // ... and that's the end of setup()
 
