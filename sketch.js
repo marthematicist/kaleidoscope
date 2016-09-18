@@ -43,8 +43,7 @@ function setup() {
   // set the background color to black
   bgColor = color( 0 , 0 , 100 , 1 );
   
-  // dots do not have a stroke (outline) drawn around them
-  noStroke();
+  
   
   // sets the size of the drawing canvas
   createCanvas( xRes , yRes );
@@ -66,6 +65,9 @@ function setup() {
   
   // draw the background to clear the title screen
   background( bgColor );
+  
+  // dots do not have a stroke (outline) drawn around them
+  noStroke();
   
   // sets the mode for angle-based functions to degrees
   angleMode( DEGREES );
