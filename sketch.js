@@ -1,7 +1,7 @@
 // xRes and yRes control how many pixels wide and tall
 // the screen is, respectively
-var xRes = windowWidth;
-var yRes = windowHeight;
+var xRes = 800;
+var yRes = 600;
 
 // bgColor and drawColor will control the background and
 // draw colors, respectively. They will be set in setup()
@@ -33,6 +33,9 @@ var maxMarker = 50;
 
 // setup runs once when the script starts
 function setup() {
+  // get browser's window dimensions
+  xRes = windowWidth;
+  yRes = windowHeight;
   
   // set the color mode to HSB (hue, saturation, brightness)
   colorMode( HSB );
