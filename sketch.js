@@ -60,7 +60,7 @@ function setup() {
   var startTime = millis();
   while( millis() - startTime < 3000 ) {
     // do nothing
-    console.log( millis-startTime);
+    console.log( millis()-startTime);
   }
   
   // draw the background to clear the title screen
