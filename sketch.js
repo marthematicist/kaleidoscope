@@ -52,6 +52,20 @@ function setup() {
   // draw the background (this only happens once)
   background( bgColor );
   
+  // draw the title screen and wait 3 seconds
+  textAlign( CENTER );
+  textSize( 60 );
+  text("KALEIDOSCOPE" , 0.5*xRes , 0.5*yRes );
+  textSize( 30 );
+  text( "Click or touch to draw. \n -marthematicist-" , 0.5*xRes , 0.5*yRes + 35 );
+  var startTime = millis();
+  while( millis() - startTime < 3000 ) {
+    // do nothing
+  }
+  
+  // draw the background to clear the title screen
+  background( bgColor );
+  
   // sets the mode for angle-based functions to degrees
   angleMode( DEGREES );
 }
