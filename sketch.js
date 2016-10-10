@@ -29,7 +29,7 @@ var dt = 1;
 
 // minMarker and maxMarker control the smallest and largest
 // size of the dots drawn
-var minMarker = 0.02*minRes;
+var minMarker = 0.002*minRes;
 var maxMarker = 0.1*minRes;
 
 // flag for whether it is the first frame or not
