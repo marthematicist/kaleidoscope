@@ -13,7 +13,7 @@ var drawColor;
 // 0 is transparent, and 1 is opaque. This value is very
 // close to transparent, but the program will run so fast
 // that the dots will overlap and brighten over time.
-var markerAlpha = 0.05;
+var markerAlpha = 0.1;
 
 // numSpokes is the number of "spokes" fir the sketch.
 // really, it's the number of dots that get drawn each
