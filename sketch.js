@@ -8,8 +8,9 @@ setupGlobalVariables = function() {
   // bgColor and drawColor will control the background and
   // draw colors, respectively. They will be set in setup()
   // and in draw()
-  bgColor;
-  drawColor;
+  // set the background color to black
+  bgColor = color( 0 , 0 , 100 , 1 );
+  //drawColor;
 
   // markerColor controls the transparency of the dots drawn.
   // 0 is transparent, and 1 is opaque. This value is very
