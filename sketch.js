@@ -1,42 +1,45 @@
-// xRes and yRes control how many pixels wide and tall
-// the screen is, respectively
-var xRes = 800;
-var yRes = 600;
-var minRes = xRes;
+setupGlobalVariables = function() {
+  // xRes and yRes control how many pixels wide and tall
+  // the screen is, respectively
+  xRes = 800;
+  yRes = 600;
+  minRes = min( xRes , yRes );
 
-// bgColor and drawColor will control the background and
-// draw colors, respectively. They will be set in setup()
-// and in draw()
-var bgColor;
-var drawColor;
+  // bgColor and drawColor will control the background and
+  // draw colors, respectively. They will be set in setup()
+  // and in draw()
+  bgColor;
+  drawColor;
 
-// markerColor controls the transparency of the dots drawn.
-// 0 is transparent, and 1 is opaque. This value is very
-// close to transparent, but the program will run so fast
-// that the dots will overlap and brighten over time.
-var markerAlpha = 0.15;
+  // markerColor controls the transparency of the dots drawn.
+  // 0 is transparent, and 1 is opaque. This value is very
+  // close to transparent, but the program will run so fast
+  // that the dots will overlap and brighten over time.
+  markerAlpha = 0.15;
 
-// numSpokes is the number of "spokes" fir the sketch.
-// really, it's the number of dots that get drawn each
-// frame, situated in a circular pattern.
-var numSpokes = 12;
+  // numSpokes is the number of "spokes" fir the sketch.
+  // really, it's the number of dots that get drawn each
+  // frame, situated in a circular pattern.
+  numSpokes = 12;
 
-// t is the time variable. It will range from 0 to 360,
-// increasing by dt every time a new frame is drawn.
-// Smaller values of dt will make t change slower
-var t = 0;
-var dt = 1;
+  // t is the time variable. It will range from 0 to 360,
+  // increasing by dt every time a new frame is drawn.
+  // Smaller values of dt will make t change slower
+  t = 0;
+  dt = 1;
 
-// minMarker and maxMarker control the smallest and largest
-// size of the dots drawn
-var minMarker = 0.002*minRes;
-var maxMarker = 0.05*minRes;
+  // minMarker and maxMarker control the smallest and largest
+  // size of the dots drawn
+  minMarker = 0.002*minRes;
+  maxMarker = 0.05*minRes;
 
-// flag for whether it is the first frame or not
-firstFrame = true;
+  // flag for whether it is the first frame or not
+  firstFrame = true;
+}
 
 // setup runs once when the script starts
 function setup() {
+  setupGlobalVariables();
   // get browser's window dimensions
   xRes = windowWidth;
   yRes = windowHeight;
