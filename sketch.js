@@ -31,8 +31,8 @@ setupGlobalVariables = function() {
 
   // minMarker and maxMarker control the smallest and largest
   // size of the dots drawn
-  minMarker = 0.002*minRes;
-  maxMarker = 0.05*minRes;
+  minMarker = 0.005*minRes;
+  maxMarker = 0.08*minRes;
 
   // flag for whether it is the first frame or not
   firstFrame = true;
