@@ -2,6 +2,7 @@
 // the screen is, respectively
 var xRes = 800;
 var yRes = 600;
+var minRes = min(xRes , yRes);
 
 // bgColor and drawColor will control the background and
 // draw colors, respectively. They will be set in setup()
@@ -28,8 +29,8 @@ var dt = 1;
 
 // minMarker and maxMarker control the smallest and largest
 // size of the dots drawn
-var minMarker = 2;
-var maxMarker = 40;
+var minMarker = 0.02*minRes;
+var maxMarker = 0.1*minRes;
 
 // flag for whether it is the first frame or not
 firstFrame = true;
