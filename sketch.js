@@ -2,7 +2,7 @@
 // the screen is, respectively
 var xRes = 800;
 var yRes = 600;
-var minRes = min(xRes , yRes);
+var minRes = xRes;
 
 // bgColor and drawColor will control the background and
 // draw colors, respectively. They will be set in setup()
